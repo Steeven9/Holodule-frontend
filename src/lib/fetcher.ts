@@ -6,5 +6,10 @@ export async function fetchStreams(branch: string) {
   if (!data || data.dateGroupList.length === 0) {
     console.error("Error fetching streams", data);
   }
-  return (data?.dateGroupList[0]?.videoList || []) as APIResponse[];
+  //TODO filter the ones too far back
+  return [
+    ...data.dateGroupList[0].videoList,
+    ...data.dateGroupList[1].videoList,
+    ...data.dateGroupList[2].videoList,
+  ] as APIResponse[];
 }

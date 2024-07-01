@@ -1,7 +1,8 @@
 import BranchButtons from "@/components/BranchButtons";
-import { TIMEZONE } from "@/lib/config";
-import type { Metadata } from "next";
+import Clock from "@/components/Clock";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,6 +12,12 @@ export const metadata: Metadata = {
   description: "Custom view for Hololive schedule",
 };
 
+export const viewport: Viewport = {
+  // themeColor: "#dc2626",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,23 +25,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} px-8 py-6 min-h-screen`}>
+      <body className={`${inter.className} px-8 py-6 min-h-screen bg-main`}>
         <main className="mb-2">
-          <div className="mb-6 text-2xl">Holodule-frontend</div>
+          <div className="text-2xl">Holodule-frontend</div>
 
-          <div className="mb-6">Current timezone: {TIMEZONE}</div>
-          <BranchButtons />
+          <div className="sticky top-0 mt-4 bg-main py-2">
+            <Clock />
+            <BranchButtons />
+          </div>
           {children}
         </main>
         <footer>
           &copy;{new Date().getFullYear()}{" "}
-          <a href="https://soulsbros.ch" className="link">
+          <Link href="https://soulsbros.ch" className="link">
             Soulsbros
-          </a>{" "}
+          </Link>{" "}
           - API data from{" "}
-          <a href="https://schedule.hololive.tv" className="link">
+          <Link href="https://schedule.hololive.tv" className="link">
             Holodule
-          </a>
+          </Link>
           <br />
           This website is not affiliated in any way with COVER Corp. We do not
           offer any correctness nor availability guarantees.

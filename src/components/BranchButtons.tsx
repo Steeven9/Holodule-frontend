@@ -3,26 +3,26 @@ import Link from "next/link";
 //TODO highlight selected one
 export default function BranchButtons() {
   return (
-    <div className="space-x-4 mb-4">
-      <Link className="link" href="/sch/all">
+    <div className="mb-4">
+      <Link className="link mr-2" href="/sch/all">
         All
       </Link>
-      <Link className="link" href="/sch/jp">
+      <Link className="link mr-2" href="/sch/jp">
         HoloJP
       </Link>
-      <Link className="link" href="/sch/en">
+      <Link className="link mr-2" href="/sch/en">
         HoloEN
       </Link>
-      <Link className="link" href="/sch/id">
+      <Link className="link mr-2" href="/sch/id">
         HoloID
       </Link>
-      <Link className="link" href="/sch/stars">
+      <Link className="link mr-2" href="/sch/stars">
         Stars
       </Link>
-      <Link className="link" href="/sch/stars_jp">
+      <Link className="link mr-2" href="/sch/stars_jp">
         Stars JP
       </Link>
-      <Link className="link" href="/sch/stars_en">
+      <Link className="link mr-2" href="/sch/stars_en">
         Stars EN
       </Link>
     </div>
