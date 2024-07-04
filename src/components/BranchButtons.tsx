@@ -1,30 +1,27 @@
-import Link from "next/link";
+"use client";
 
-//TODO highlight selected one
+import { usePathname, useRouter } from "next/navigation";
+
 export default function BranchButtons() {
+  const router = useRouter();
+  const path = usePathname();
+
   return (
     <div className="mb-4">
-      <Link className="link mr-2" href="/sch/all">
-        All
-      </Link>
-      <Link className="link mr-2" href="/sch/jp">
-        HoloJP
-      </Link>
-      <Link className="link mr-2" href="/sch/en">
-        HoloEN
-      </Link>
-      <Link className="link mr-2" href="/sch/id">
-        HoloID
-      </Link>
-      <Link className="link mr-2" href="/sch/stars">
-        Stars
-      </Link>
-      <Link className="link mr-2" href="/sch/stars_jp">
-        Stars JP
-      </Link>
-      <Link className="link mr-2" href="/sch/stars_en">
-        Stars EN
-      </Link>
+      <span>Branch:</span>
+      <select
+        className="text-black ml-2"
+        onChange={(e) => router.push(e.target.value)}
+        defaultValue={path}
+      >
+        <option value="/sch/all">All</option>
+        <option value="/sch/jp">HoloJP</option>
+        <option value="/sch/en">HoloEN</option>
+        <option value="/sch/id">HoloID</option>
+        <option value="/sch/stars">Stars</option>
+        <option value="/sch/stars_jp">Stars JP</option>
+        <option value="/sch/stars_en">Stars EN</option>
+      </select>
     </div>
   );
 }

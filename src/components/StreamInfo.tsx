@@ -16,9 +16,13 @@ function parseDate(dateString: string) {
 }
 
 //TODO better live indicator (red dot or smth)
+//TODO default thumbnail
 export default function StreamInfo({ stream }: Readonly<Props>) {
   return (
-    <div className="mb-8 flex items-center" key={stream.url}>
+    <div
+      className="mb-8 flex items-center"
+      key={stream.url + stream.title + stream.datetime}
+    >
       <Link href={stream.url} target="_blank">
         <Image
           src={stream.thumbnail}

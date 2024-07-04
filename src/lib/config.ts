@@ -55,6 +55,12 @@ export const TALENTS: IDictionary<Talent> = {
   常闇トワ: { enName: "Towa" },
   鷹嶺ルイ: { enName: "Lui" },
   湊あくあ: { enName: "Aqua" },
+  桃鈴ねね: { enName: "Nenechi" },
+  赤井はあと: { enName: "Haachama" },
+  白上フブキ: { enName: "Fubuki" },
+  さくらみこ: { enName: "Miko" },
+  雪花ラミィ: { enName: "Lamy" },
+  猫又おかゆ: { enName: "Okayu" },
   // -- EN --
   Baelz: { enName: "Bae" },
   // -- STARS EN --
