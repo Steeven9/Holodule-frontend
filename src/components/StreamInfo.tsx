@@ -1,9 +1,12 @@
+import defaultThumbnail from "@/img/defaultThumbnail.png";
+import liveIcon from "@/img/live.png";
 import { TALENTS, TIMEZONE } from "@/lib/config";
 import { APIResponse } from "@/types/API";
 import { parse } from "date-fns";
 import { format, fromZonedTime } from "date-fns-tz";
 import Image from "next/image";
 import Link from "next/link";
+import ImageWithFallback from "./imageWithFallback";
 
 interface Props {
   stream: APIResponse;
@@ -15,8 +18,6 @@ function parseDate(dateString: string) {
   return format(utcDate, "dd/MM HH:mm", { timeZone: TIMEZONE });
 }
 
-//TODO better live indicator (red dot or smth)
-//TODO default thumbnail
 export default function StreamInfo({ stream }: Readonly<Props>) {
   return (
     <div
@@ -24,8 +25,9 @@ export default function StreamInfo({ stream }: Readonly<Props>) {
       key={stream.url + stream.title + stream.datetime}
     >
       <Link href={stream.url} target="_blank">
-        <Image
+        <ImageWithFallback
           src={stream.thumbnail}
+          fallbackSrc={defaultThumbnail}
           width={160}
           height={90}
           className="min-w-[120px]"
@@ -36,10 +38,19 @@ export default function StreamInfo({ stream }: Readonly<Props>) {
         <Link href={stream.url} target="_blank" className="link">
           {stream.title.length === 0 ? "<Unknown title>" : stream.title}
         </Link>
-        <br />
-        {TALENTS[stream.talent.name]?.enName || stream.talent.name}
-        <br />
-        at {parseDate(stream.datetime)} {stream.isLive ? "(LIVE)" : null}
+        <div>{TALENTS[stream.talent.name]?.enName || stream.talent.name}</div>
+        <div>
+          <span className="align-middle">at {parseDate(stream.datetime)}</span>
+          {stream.isLive ? (
+            <Image
+              src={liveIcon}
+              width={35}
+              height={15}
+              alt="LIVE"
+              className="inline-block align-middle ml-2"
+            />
+          ) : null}
+        </div>
       </div>
     </div>
   );
