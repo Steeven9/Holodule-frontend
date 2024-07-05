@@ -2,8 +2,7 @@ import defaultThumbnail from "@/img/defaultThumbnail.png";
 import liveIcon from "@/img/live.png";
 import { TALENTS, TIMEZONE } from "@/lib/config";
 import { APIResponse } from "@/types/API";
-import { parse } from "date-fns";
-import { format, fromZonedTime } from "date-fns-tz";
+import moment from "moment-timezone";
 import Image from "next/image";
 import Link from "next/link";
 import ImageWithFallback from "./imageWithFallback";
@@ -13,9 +12,9 @@ interface Props {
 }
 
 function parseDate(dateString: string) {
-  const zonedDate = parse(dateString, "yyyy/MM/dd HH:mm:ss", new Date());
-  const utcDate = fromZonedTime(zonedDate, "Asia/Tokyo");
-  return format(utcDate, "dd/MM HH:mm", { timeZone: TIMEZONE });
+  const jpDateTime = moment.tz(dateString, "yyyy/MM/DD HH:mm:ss", "Asia/Tokyo");
+  const localDateTime = jpDateTime.clone().tz(TIMEZONE);
+  return localDateTime.format("DD/MM HH:mm");
 }
 
 export default function StreamInfo({ stream }: Readonly<Props>) {
@@ -30,11 +29,12 @@ export default function StreamInfo({ stream }: Readonly<Props>) {
           fallbackSrc={defaultThumbnail}
           width={160}
           height={90}
-          className="min-w-[120px]"
+          className="min-w-[160px]"
           alt="Thumbnail"
         />
       </Link>
-      <div className="ml-4">
+
+      <div className="ml-4 y-s space-y-2">
         <Link href={stream.url} target="_blank" className="link">
           {stream.title.length === 0 ? "<Unknown title>" : stream.title}
         </Link>

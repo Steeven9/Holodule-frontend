@@ -7,7 +7,7 @@ export const TIMEZONE = "Europe/Zurich";
 
 export const BRANCHES: IDictionary<Branch> = {
   all: {
-    apiUrl: `${BASE_URL}/api/list/1`,
+    apiUrl: `${BASE_URL}/api/list`,
     name: "All talents",
   },
   en: {
@@ -43,9 +43,12 @@ export const TALENTS: IDictionary<Talent> = {
   赤井はあと: { enName: "Haachama" },
   アキロゼ: { enName: "Aki" },
   白上フブキ: { enName: "Fubuki" },
+  ロボ子さん: { enName: "Roboco" },
   // 1st gen
   大神ミオ: { enName: "Mio" },
   さくらみこ: { enName: "Miko" },
+  夏色まつり: { enName: "Matsuri" },
+  戌神ころね: { enName: "Korone" },
   // 2nd gen
   癒月ちょこ: { enName: "Choco" },
   大空スバル: { enName: "Subaru" },
@@ -68,11 +71,13 @@ export const TALENTS: IDictionary<Talent> = {
   博衣こより: { enName: "Koyori" },
   沙花叉クロヱ: { enName: "Chloe" },
   鷹嶺ルイ: { enName: "Lui" },
+  風真いろは: { enName: "Iroha" },
   // DEV_IS
   轟はじめ: { enName: "Hajime" },
   火威青: { enName: "Ao" },
   一条莉々華: { enName: "Ririka" },
   儒烏風亭らでん: { enName: "Raden" },
+  音乃瀬奏: { enName: "Kanade" },
   // -- STARS --
   律可: { enName: "Rikka" },
   岸堂天真: { enName: "Temma" },

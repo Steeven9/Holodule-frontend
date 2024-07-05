@@ -1,8 +1,8 @@
 import { APIResponse } from "@/types/API";
-import { parse } from "date-fns";
-import { fromZonedTime } from "date-fns-tz";
+import moment from "moment-timezone";
+import { TIMEZONE } from "./config";
 
-export async function fetchStreams(branch: string) {
+export async function fetchStreams(branch: string, includePast = false) {
   const result = await fetch(branch);
   const data = await result.json();
   if (!data || data.dateGroupList.length === 0) {
@@ -16,10 +16,21 @@ export async function fetchStreams(branch: string) {
   ] as APIResponse[];
 
   return streams.filter((stream) => {
-    const zonedDate = parse(stream.datetime, "yyyy/MM/dd HH:mm:ss", new Date());
-    const utcDate = fromZonedTime(zonedDate, "Asia/Tokyo");
+    const jpDateTime = moment.tz(
+      stream.datetime,
+      "yyyy/MM/DD HH:mm:ss",
+      "Asia/Tokyo",
+    );
+    const localDateTime = jpDateTime.clone().tz(TIMEZONE);
     const now = new Date();
-    // keep only if live, or if stream date is today or future
-    return stream.isLive || utcDate.getDate() >= now.getDate();
+
+    // keep only if live, or if stream date is in the future or today (up to this hour)
+    return (
+      stream.isLive ||
+      includePast ||
+      localDateTime.day() > now.getDate() ||
+      (localDateTime.day() == now.getDate() &&
+        localDateTime.hour() >= now.getHours())
+    );
   });
 }
