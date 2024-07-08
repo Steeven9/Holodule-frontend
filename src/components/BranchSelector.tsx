@@ -1,16 +1,30 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function BranchSelector() {
+function ShowPastButton() {
+  //using useSearchParams requires the component to be in a Suspense boundary
+  // ¯\_(ツ)_/¯
+  const searchParams = useSearchParams();
   const router = useRouter();
   const path = usePathname();
-  const searchParams = useSearchParams();
 
   function handleShowPast() {
     const newPath = searchParams.has("all") ? path : `${path}?all`;
     router.push(newPath);
   }
+
+  return (
+    <button className="ml-4 button" onClick={handleShowPast}>
+      {searchParams.has("all") ?? false ? "Hide past" : "Show past"}
+    </button>
+  );
+}
+
+export default function BranchSelector() {
+  const router = useRouter();
+  const path = usePathname();
 
   return (
     <div className="mb-4">
@@ -32,9 +46,9 @@ export default function BranchSelector() {
         <option value="/sch/stars_en">Stars EN</option>
       </select>
 
-      <button className="ml-4 button" onClick={handleShowPast}>
-        {searchParams.has("all") ?? false ? "Hide past" : "Show past"}
-      </button>
+      <Suspense>
+        <ShowPastButton />
+      </Suspense>
     </div>
   );
 }
