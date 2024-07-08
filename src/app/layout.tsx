@@ -1,4 +1,4 @@
-import BranchButtons from "@/components/BranchButtons";
+import BranchSelector from "@/components/BranchSelector";
 import TimeBar from "@/components/TimeBar";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
@@ -30,7 +30,7 @@ export default function RootLayout({
           <div className="sticky top-0 bg-main py-2">
             <div className="text-2xl mb-2">Holodule-frontend</div>
             <TimeBar />
-            <BranchButtons />
+            <BranchSelector />
           </div>
 
           {children}
@@ -40,6 +40,13 @@ export default function RootLayout({
           &copy;{new Date().getFullYear()}{" "}
           <Link href="https://soulsbros.ch" className="link">
             Soulsbros
+          </Link>
+          {" - "}
+          <Link
+            href="https://github.com/Steeven9/holodule-frontend"
+            className="link"
+          >
+            GitHub
           </Link>{" "}
           - API data from{" "}
           <Link href="https://schedule.hololive.tv" className="link">
