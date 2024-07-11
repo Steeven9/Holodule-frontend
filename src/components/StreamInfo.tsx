@@ -1,6 +1,6 @@
 import defaultThumbnail from "@/img/defaultThumbnail.png";
 import liveIcon from "@/img/live.png";
-import { TALENTS, TIMEZONE } from "@/lib/config";
+import { getTalent, TIMEZONE } from "@/lib/config";
 import { APIResponse } from "@/types/API";
 import moment from "moment-timezone";
 import Image from "next/image";
@@ -18,6 +18,8 @@ function parseDate(dateString: string) {
 }
 
 export default function StreamInfo({ stream }: Readonly<Props>) {
+  const talent = getTalent(stream.talent.name);
+
   return (
     <div
       className="mb-8 flex items-center"
@@ -38,7 +40,7 @@ export default function StreamInfo({ stream }: Readonly<Props>) {
         <Link href={stream.url} target="_blank" className="link">
           {stream.title.length === 0 ? "<Unknown title>" : stream.title}
         </Link>
-        <div>{TALENTS[stream.talent.name]?.enName || stream.talent.name}</div>
+        <div>{talent?.nickname ?? stream.talent.name}</div>
         <div>
           <span className="align-middle">at {parseDate(stream.datetime)}</span>
           {stream.isLive ? (

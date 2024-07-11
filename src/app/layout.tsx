@@ -38,18 +38,23 @@ export default function RootLayout({
 
         <footer className="text-center">
           &copy;{new Date().getFullYear()}{" "}
-          <Link href="https://soulsbros.ch" className="link">
+          <Link href="https://soulsbros.ch" className="link" target="_blank">
             Soulsbros
           </Link>
           {" - "}
           <Link
             href="https://github.com/Steeven9/holodule-frontend"
+            target="_blank"
             className="link"
           >
             GitHub
           </Link>{" "}
           - API data from{" "}
-          <Link href="https://schedule.hololive.tv" className="link">
+          <Link
+            href="https://schedule.hololive.tv"
+            className="link"
+            target="_blank"
+          >
             Holodule
           </Link>
           <br />

@@ -4,6 +4,18 @@ export interface Branch {
 }
 
 export interface Talent {
-  enName: string;
-  jpName?: string;
+  apiName: string;
+  nickname: string;
+  //TODO remove optional when done
+  name?: string;
+  twitterAccount?: string;
+  youtubeChannel?: string;
+  agency?: string;
+  generation?: string;
+  generationId?: number;
+  active: boolean;
+  colors?: {
+    light?: string;
+    dark?: string;
+  };
 }
