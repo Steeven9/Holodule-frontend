@@ -36,7 +36,7 @@ export default function StreamInfo({ stream }: Readonly<Props>) {
         />
       </Link>
 
-      <div className="ml-4 y-s space-y-2">
+      <div className="ml-4 y-s space-y-2 break-all">
         <Link href={stream.url} target="_blank" className="link">
           {stream.title.length === 0 ? "<Unknown title>" : stream.title}
         </Link>
