@@ -44,7 +44,7 @@ export function getTalent(name: string) {
   return result;
 }
 
-export const TALENTS: Talent[] = [
+const TALENTS: Talent[] = [
   // -- JP --
   // gen 0
   { apiName: "ときのそら", nickname: "Sora", active: true },
@@ -84,7 +84,7 @@ export const TALENTS: Talent[] = [
   { apiName: "獅白ぼたん", nickname: "Botan", active: true },
   { apiName: "尾丸ポルカ", nickname: "Polka", active: true },
   // holoX
-  { apiName: "ラプラス・ダークネス", nickname: "La+", active: true },
+  { apiName: "ラプラス", nickname: "La+", active: true },
   { apiName: "鷹嶺ルイ", nickname: "Lui", active: true },
   { apiName: "博衣こより", nickname: "Koyori", active: true },
   { apiName: "沙花叉クロヱ", nickname: "Chloe", active: true },
@@ -593,7 +593,7 @@ export const TALENTS: Talent[] = [
     },
   },
   {
-    apiName: "",
+    apiName: "Flayon",
     nickname: "Flayon",
     name: "Machina X Flayon",
     twitterAccount: "machinaxflayon",
@@ -673,6 +673,7 @@ export const TALENTS: Talent[] = [
   { apiName: "友人A", nickname: "A-chan", active: false },
   { apiName: "ホロライブ", nickname: "Hololive main ch.", active: true },
   { apiName: "ホロスターズ", nickname: "Holostars ch.", active: true },
+  { apiName: "HOLOSTARS EN", nickname: "Holostars EN ch.", active: true },
   { apiName: "hololive DEV_IS", nickname: "Hololive DEV_IS ch.", active: true },
   { apiName: "holo EN", nickname: "Hololive EN ch.", active: true },
 ];

@@ -1,6 +1,7 @@
 import StreamInfo from "@/components/StreamInfo";
 import { BRANCHES } from "@/lib/config";
 import { fetchStreams } from "@/lib/fetcher";
+import { notFound } from "next/navigation";
 
 interface Props {
   params: { branch: string };
@@ -12,6 +13,10 @@ export default async function BranchSchedule({
   searchParams,
 }: Readonly<Props>) {
   const branch = BRANCHES[params.branch];
+  if (!branch) {
+    notFound();
+  }
+
   const streams = await fetchStreams(
     branch.apiUrl,
     Object.keys(searchParams).includes("all"),
