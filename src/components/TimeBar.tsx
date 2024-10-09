@@ -9,7 +9,7 @@ export default function TimeBar() {
     <div className="mb-4">
       Current time:{" "}
       <Clock
-        format={"DD/MM HH:mm:ss"}
+        format={"DD/MM/YYYY HH:mm:ss"}
         ticking={true}
         timezone={TIMEZONE}
         noSsr={true}

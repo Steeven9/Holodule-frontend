@@ -8,7 +8,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Holodule-frontend",
+  title: "Holodule",
   description: "Custom view for Hololive schedule",
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${inter.className} px-8 py-6 min-h-screen bg-main`}>
         <main className="mb-2">
           <div className="sticky top-0 bg-main py-2">
-            <div className="text-2xl mb-2">Holodule-frontend</div>
+            <div className="text-2xl mb-2">Holodule</div>
             <TimeBar />
             <BranchSelector />
           </div>
@@ -55,7 +55,7 @@ export default function RootLayout({
             className="link"
             target="_blank"
           >
-            Holodule
+            Hololive
           </Link>
           <br />
           This website is not affiliated in any way with COVER Corp. We do not

@@ -1,5 +1,12 @@
 import BranchSchedule from "./sch/[branch]/page";
 
-export default function Home() {
-  return <BranchSchedule params={{ branch: "all" }} searchParams={{}} />;
+interface Props {
+  params: { branch: string };
+  searchParams: { all?: string };
+}
+
+export default function Home({ searchParams }: Readonly<Props>) {
+  return (
+    <BranchSchedule params={{ branch: "all" }} searchParams={searchParams} />
+  );
 }

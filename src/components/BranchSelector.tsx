@@ -1,5 +1,6 @@
 "use client";
 
+import { BRANCHES } from "@/lib/config";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -17,7 +18,7 @@ function ShowPastButton() {
 
   return (
     <button className="ml-4 button" onClick={handleShowPast}>
-      {searchParams.has("all") ?? false ? "Hide past" : "Show past"}
+      {(searchParams.has("all") ?? false) ? "Hide past" : "Show past"}
     </button>
   );
 }
@@ -34,13 +35,11 @@ export default function BranchSelector() {
         onChange={(e) => router.push(e.target.value)}
         defaultValue={path}
       >
-        <option value="/sch/all">All talents</option>
-        <option value="/sch/jp">HoloJP</option>
-        <option value="/sch/en">HoloEN</option>
-        <option value="/sch/id">HoloID</option>
-        <option value="/sch/stars">Stars</option>
-        <option value="/sch/stars_jp">Stars JP</option>
-        <option value="/sch/stars_en">Stars EN</option>
+        {Object.keys(BRANCHES).map((branch) => (
+          <option value={BRANCHES[branch].pageUrl} key={branch}>
+            {BRANCHES[branch].name}
+          </option>
+        ))}
       </select>
 
       <Suspense>

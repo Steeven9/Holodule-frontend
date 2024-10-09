@@ -1,5 +1,6 @@
 export interface Branch {
   apiUrl: string;
+  pageUrl: string;
   name: string;
 }
 

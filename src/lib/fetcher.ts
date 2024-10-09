@@ -2,8 +2,8 @@ import { APIResponse } from "@/types/API";
 import moment from "moment-timezone";
 import { TIMEZONE } from "./config";
 
-export async function fetchStreams(branch: string, includePast = false) {
-  const result = await fetch(branch, { cache: "no-store" });
+export async function fetchStreams(url: string, includePast = false) {
+  const result = await fetch(url, { cache: "no-store" });
   const data = await result.json();
   if (!data || data.dateGroupList.length === 0) {
     console.error("Error fetching streams", data);

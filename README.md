@@ -1,4 +1,4 @@
-# Holodule-frontend
+# Holodule
 
 [![](https://img.shields.io/github/license/steeven9/Holodule-frontend)](/LICENSE)
 [![C/C++ CI](https://github.com/steeven9/Holodule-frontend/actions/workflows/docker-image.yml/badge.svg)](https://github.com/steeven9/Holodule-frontend/actions/workflows/docker-image.yml)
@@ -20,7 +20,7 @@ None
 
 ### ⚙️ Prerequisites
 
-- Node.js v20
+- Node.js v22
 - Yarn package manager
 
 ### 🔧 Installation
