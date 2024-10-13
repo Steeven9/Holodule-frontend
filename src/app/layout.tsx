@@ -1,4 +1,4 @@
-import BranchSelector from "@/components/BranchSelector";
+import Menu from "@/components/Menu";
 import TimeBar from "@/components/TimeBar";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
@@ -27,10 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} px-8 py-6 min-h-screen bg-main`}>
         <main className="mb-2">
-          <div className="sticky top-0 bg-main py-2">
+          <div className="py-2">
             <div className="text-2xl mb-2">Holodule</div>
+            <Menu />
             <TimeBar />
-            <BranchSelector />
           </div>
 
           {children}

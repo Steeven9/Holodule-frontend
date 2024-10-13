@@ -1,3 +1,4 @@
+import BranchSelector from "@/components/BranchSelector";
 import StreamInfo from "@/components/StreamInfo";
 import { BRANCHES } from "@/lib/config";
 import { fetchStreams } from "@/lib/fetcher";
@@ -24,6 +25,7 @@ export default async function BranchSchedule({
 
   return (
     <>
+      <BranchSelector />
       <p className="title">{branch.name}</p>
       {streams.map((stream) => (
         <StreamInfo stream={stream} key={stream.url} />

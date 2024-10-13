@@ -1,0 +1,62 @@
+import { BRANCHES, TALENTS } from "@/lib/config";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+interface Props {
+  params: { branch: string };
+}
+
+export default async function BranchTalents({ params }: Readonly<Props>) {
+  const branch = BRANCHES[params.branch];
+  if (!branch) {
+    notFound();
+  }
+
+  const data = TALENTS.filter(
+    (talent) =>
+      talent.agency &&
+      (talent.agency == branch.name || branch.name == "All talents"),
+  );
+
+  return (
+    <>
+      <p className="title">{branch.name}</p>
+      {data.map((talent) => (
+        <div key={talent.nickname} className="mb-4" id={talent.nickname}>
+          <div className="subtitle">
+            {talent.name ?? talent.nickname}
+            {talent.fanMark ? ` ${talent.fanMark}` : ""}
+          </div>
+
+          <div>
+            {talent.agency} gen {talent.generationId}
+            {talent.generation ? ` (${talent.generation})` : ""}
+            {!talent.active ? " - Graduated" : ""}
+          </div>
+
+          <div className="mt-1">
+            {talent.twitterAccount ? (
+              <Link
+                href={`https://x.com/${talent.twitterAccount}`}
+                target="_blank"
+                className="link"
+              >
+                Twitter
+              </Link>
+            ) : null}
+
+            {talent.youtubeChannel ? (
+              <Link
+                href={`https://youtube.com/@${talent.youtubeChannel}`}
+                target="_blank"
+                className="link ml-4"
+              >
+                YouTube
+              </Link>
+            ) : null}
+          </div>
+        </div>
+      ))}
+    </>
+  );
+}

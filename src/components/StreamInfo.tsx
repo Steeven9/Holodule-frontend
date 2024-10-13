@@ -19,6 +19,7 @@ function parseDate(dateString: string) {
 
 export default function StreamInfo({ stream }: Readonly<Props>) {
   const talent = getTalent(stream.talent.name);
+  const talentName = talent?.nickname ?? stream.talent.name;
 
   return (
     <div
@@ -40,7 +41,9 @@ export default function StreamInfo({ stream }: Readonly<Props>) {
         <Link href={stream.url} target="_blank" className="link">
           {stream.title.length === 0 ? "<Unknown title>" : stream.title}
         </Link>
-        <div>{talent?.nickname ?? stream.talent.name}</div>
+        <div>
+          <Link href={`/talents/all#${talentName}`}>{talentName}</Link>
+        </div>
         <div>
           <span className="align-middle">at {parseDate(stream.datetime)}</span>
           {stream.isLive ? (

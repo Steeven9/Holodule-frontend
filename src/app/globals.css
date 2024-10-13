@@ -8,7 +8,7 @@
 }
 
 .link {
-  @apply hover:text-blue-600;
+  @apply hover:text-blue-500;
 }
 
 .title {

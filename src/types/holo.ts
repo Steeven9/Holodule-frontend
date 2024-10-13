@@ -7,8 +7,8 @@ export interface Branch {
 export interface Talent {
   apiName: string;
   nickname: string;
-  //TODO remove optional when done
   name?: string;
+  fanMark?: string;
   twitterAccount?: string;
   youtubeChannel?: string;
   agency?: string;
@@ -16,7 +16,7 @@ export interface Talent {
   generationId?: number;
   active: boolean;
   colors?: {
-    light?: string;
+    light: string;
     dark?: string;
   };
 }

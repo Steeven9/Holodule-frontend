@@ -1,12 +1,5 @@
-import BranchSchedule from "./sch/[branch]/page";
+import { redirect } from "next/navigation";
 
-interface Props {
-  params: { branch: string };
-  searchParams: { all?: string };
-}
-
-export default function Home({ searchParams }: Readonly<Props>) {
-  return (
-    <BranchSchedule params={{ branch: "all" }} searchParams={searchParams} />
-  );
+export default function Home() {
+  redirect("/schedule/all");
 }
