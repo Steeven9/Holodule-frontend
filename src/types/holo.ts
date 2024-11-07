@@ -6,8 +6,8 @@ export interface Branch {
 
 export interface Talent {
   apiName: string;
-  nickname: string;
-  name?: string;
+  nickname?: string;
+  name: string;
   fanMark?: string;
   twitterAccount?: string;
   youtubeChannel?: string;

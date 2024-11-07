@@ -19,7 +19,7 @@ function parseDate(dateString: string) {
 
 export default function StreamInfo({ stream }: Readonly<Props>) {
   const talent = getTalent(stream.talent.name);
-  const talentName = talent?.nickname ?? stream.talent.name;
+  const talentName = talent?.nickname ?? talent?.name ?? stream.talent.name;
 
   return (
     <div

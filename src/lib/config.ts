@@ -504,6 +504,67 @@ export const TALENTS: Talent[] = [
     generationId: 1,
     active: true,
   },
+  // FLOW GLOW
+  {
+    apiName: "響咲リオナ",
+    nickname: undefined,
+    name: "Isaki Riona",
+    fanMark: "🎤👑",
+    twitterAccount: "isakiriona",
+    youtubeChannel: "IsakiRiona",
+    agency: "Hololive DEV_IS",
+    generation: "FLOW GLOW",
+    generationId: 2,
+    active: true,
+  },
+  {
+    apiName: "虎金妃笑虎",
+    nickname: undefined,
+    name: "Koganei Niko",
+    fanMark: "☺️🐅",
+    twitterAccount: "koganeiniko",
+    youtubeChannel: "KoganeiNiko",
+    agency: "Hololive DEV_IS",
+    generation: "FLOW GLOW",
+    generationId: 2,
+    active: true,
+  },
+  {
+    apiName: "水宮枢",
+    nickname: undefined,
+    name: "Mizumiya Su",
+    fanMark: "💬🔁💙",
+    twitterAccount: "mizumiya_su",
+    youtubeChannel: "MizumiyaSu",
+    agency: "Hololive DEV_IS",
+    generation: "FLOW GLOW",
+    generationId: 2,
+    active: true,
+  },
+  {
+    apiName: "輪堂千速",
+    nickname: undefined,
+    name: "Rindo Chihaya",
+    fanMark: "🎧🔧",
+    twitterAccount: "rindochihaya",
+    youtubeChannel: "RindoChihaya",
+    agency: "Hololive DEV_IS",
+    generation: "FLOW GLOW",
+    generationId: 2,
+    active: true,
+  },
+  {
+    apiName: "綺々羅々ヴィヴィ",
+    nickname: undefined,
+    name: "Kikirara Vivi",
+    fanMark: "💅✨",
+    twitterAccount: "kikiraravivi",
+    youtubeChannel: "KikiraraVivi",
+    agency: "Hololive DEV_IS",
+    generation: "FLOW GLOW",
+    generationId: 2,
+    active: true,
+  },
 
   // -- EN --
   // Myth
@@ -969,6 +1030,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "花咲みやび",
     nickname: "Miyabi",
+    name: "Hanasaki Miyabi",
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
@@ -977,6 +1039,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "奏手イヅル",
     nickname: "Izuru",
+    name: "Kanade Izuru",
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
@@ -985,6 +1048,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "アルランディス",
     nickname: "Aruran",
+    name: "Arurandeisu",
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
@@ -993,6 +1057,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "律可",
     nickname: "Rikka",
+    name: "Rikkaroid",
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
@@ -1001,6 +1066,16 @@ export const TALENTS: Talent[] = [
   {
     apiName: "鏡見キラ",
     nickname: "Kira",
+    name: "Kagami Kira",
+    agency: "Holostars JP",
+    generation: "",
+    generationId: 1,
+    active: false,
+  },
+  {
+    apiName: "薬師寺 朱雀",
+    nickname: "Suzaku",
+    name: "Yakushiji Suzaku",
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
@@ -1010,6 +1085,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "アステル・レダ",
     nickname: "Astel",
+    name: "Astel Leda",
     agency: "Holostars JP",
     generation: "SunTempo",
     generationId: 2,
@@ -1018,6 +1094,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "岸堂天真",
     nickname: "Temma",
+    name: "Kishido Temma",
     agency: "Holostars JP",
     generation: "SunTempo",
     generationId: 2,
@@ -1026,6 +1103,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "夕刻ロベル",
     nickname: "Roberu",
+    name: "Yukoku Roberu",
     agency: "Holostars JP",
     generation: "SunTempo",
     generationId: 2,
@@ -1035,6 +1113,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "影山シエン",
     nickname: "Shien",
+    name: "Kageyama Shien",
     agency: "Holostars JP",
     generation: "MaFia",
     generationId: 3,
@@ -1043,6 +1122,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "荒咬オウガ",
     nickname: "Oga",
+    name: "Aragami Oga",
     agency: "Holostars JP",
     generation: "MaFia",
     generationId: 3,
@@ -1052,6 +1132,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "夜十神封魔",
     nickname: "Fuma",
+    name: "Yatogami Fuma",
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
@@ -1060,6 +1141,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "羽継烏有",
     nickname: "Uyu",
+    name: "Utsugi Uyu",
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
@@ -1068,6 +1150,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "緋崎ガンマ",
     nickname: "Gamma",
+    name: "Hizaki Gamma",
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
@@ -1076,6 +1159,7 @@ export const TALENTS: Talent[] = [
   {
     apiName: "水無世燐央",
     nickname: "Rio",
+    name: "Minase Rio",
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
@@ -1304,35 +1388,42 @@ export const TALENTS: Talent[] = [
   // -- Channels --
   {
     apiName: "ホロライブ",
-    nickname: "Hololive main ch.",
+    name: "Hololive main ch.",
     twitterAccount: "hololivetv",
     youtubeChannel: "hololive",
     active: true,
   },
   {
     apiName: "hololive DEV_IS",
-    nickname: "Hololive DEV_IS ch.",
+    name: "Hololive DEV_IS ch.",
     twitterAccount: "",
     youtubeChannel: "hololiveDEV_IS",
     active: true,
   },
   {
+    apiName: "FLOW GLOW",
+    name: "Hololive DEV_IS FLOW GLOW ch.",
+    twitterAccount: "",
+    youtubeChannel: "DEV_IS_FLOWGLOW",
+    active: true,
+  },
+  {
     apiName: "holo EN",
-    nickname: "Hololive EN ch.",
+    name: "Hololive EN ch.",
     twitterAccount: "hololive_En",
     youtubeChannel: "",
     active: true,
   },
   {
     apiName: "ホロスターズ",
-    nickname: "Holostars ch.",
-    twitterAccount: "",
-    youtubeChannel: "",
+    name: "Holostars ch.",
+    twitterAccount: "holostarstv",
+    youtubeChannel: "HOLOSTARS",
     active: true,
   },
   {
     apiName: "HOLOSTARS EN",
-    nickname: "Holostars EN ch.",
+    name: "Holostars EN ch.",
     twitterAccount: "",
     youtubeChannel: "",
     active: true,
