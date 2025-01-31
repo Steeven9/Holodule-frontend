@@ -22,7 +22,11 @@ export default async function BranchTalents({ params }: Readonly<Props>) {
     <>
       <p className="title">{branch.name}</p>
       {data.map((talent) => (
-        <div key={talent.name} className="mb-8" id={talent.nickname}>
+        <div
+          key={talent.name}
+          className="mb-8"
+          id={talent.nickname ?? talent.name}
+        >
           <div className="subtitle">
             {talent.name}
             {talent.fanMark ? ` ${talent.fanMark}` : ""}
