@@ -2,14 +2,16 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [main]
+    branches:
+      - "*"
 
 jobs:
-  build-and-push:
-    uses: steeven9/CICD-template/.github/workflows/docker-build.yml@main
+  build-branches:
+    # Build all branches but push only in main
+    uses: soulsbros/CICD-template/.github/workflows/docker-build.yml@main
     with:
-      image-name: steeven9/holodule-frontend
-      push: true
+      image-name: steeven9/holodule-frontend:latest
+      push: ${{ github.ref_name == 'main' }}
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
