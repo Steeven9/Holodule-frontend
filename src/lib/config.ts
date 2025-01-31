@@ -62,7 +62,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 0,
-    active: true,
+    status: "active",
   },
   {
     apiName: "ロボ子さん",
@@ -72,7 +72,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 0,
-    active: true,
+    status: "active",
   },
   {
     apiName: "AZKi",
@@ -82,7 +82,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 0,
-    active: true,
+    status: "active",
   },
   {
     apiName: "さくらみこ",
@@ -92,7 +92,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 0,
-    active: true,
+    status: "active",
   },
   {
     apiName: "星街すいせい",
@@ -102,7 +102,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 0,
-    active: true,
+    status: "active",
   },
   // 1st gen
   {
@@ -113,7 +113,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "赤井はあと",
@@ -123,7 +123,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "白上フブキ",
@@ -133,7 +133,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "夏色まつり",
@@ -143,7 +143,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "夜空メル",
@@ -153,7 +153,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 1,
-    active: false,
+    status: "graduated",
   },
   // 2nd gen
   {
@@ -164,7 +164,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 2,
-    active: false,
+    status: "active",
   },
   {
     apiName: "紫咲シオン",
@@ -174,7 +174,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "百鬼あやめ",
@@ -184,7 +184,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "癒月ちょこ",
@@ -194,7 +194,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "大空スバル",
@@ -204,7 +204,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   // Gamers
   {
@@ -215,7 +215,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "GAMERS",
     generationId: 2.5, // ????
-    active: true,
+    status: "active",
   },
   {
     apiName: "猫又おかゆ",
@@ -225,7 +225,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "GAMERS",
     generationId: 2.5, // ????
-    active: true,
+    status: "active",
   },
   {
     apiName: "戌神ころね",
@@ -235,7 +235,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "GAMERS",
     generationId: 2.5, // ????
-    active: true,
+    status: "active",
   },
   // holofantasy (3rd)
   {
@@ -246,7 +246,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "Fantasy",
     generationId: 3,
-    active: true,
+    status: "active",
   },
   {
     apiName: "不知火フレア",
@@ -256,7 +256,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "Fantasy",
     generationId: 3,
-    active: true,
+    status: "active",
   },
   {
     apiName: "白銀ノエル",
@@ -266,7 +266,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "Fantasy",
     generationId: 3,
-    active: true,
+    status: "active",
   },
   {
     apiName: "宝鐘マリン",
@@ -276,7 +276,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "Fantasy",
     generationId: 3,
-    active: true,
+    status: "active",
   },
   {
     apiName: "潤羽るしあ",
@@ -286,7 +286,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "Fantasy",
     generationId: 3,
-    active: false,
+    status: "graduated",
   },
   // holoforce (4th)
   {
@@ -297,7 +297,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "HoloForce",
     generationId: 4,
-    active: true,
+    status: "active",
   },
   {
     apiName: "角巻わため",
@@ -307,7 +307,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "HoloForce",
     generationId: 4,
-    active: true,
+    status: "active",
   },
   {
     apiName: "常闇トワ",
@@ -317,7 +317,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "HoloForce",
     generationId: 4,
-    active: true,
+    status: "active",
   },
   {
     apiName: "姫森ルーナ",
@@ -327,7 +327,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "HoloForce",
     generationId: 4,
-    active: true,
+    status: "active",
   },
   {
     apiName: "桐生ココ",
@@ -337,7 +337,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "HoloForce",
     generationId: 4,
-    active: false,
+    status: "graduated",
   },
   // NePoLaBo (5th gen)
   {
@@ -348,7 +348,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "NePoLaBo",
     generationId: 5,
-    active: true,
+    status: "active",
   },
   {
     apiName: "桃鈴ねね",
@@ -358,7 +358,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "NePoLaBo",
     generationId: 5,
-    active: true,
+    status: "active",
   },
   {
     apiName: "獅白ぼたん",
@@ -368,7 +368,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "NePoLaBo",
     generationId: 5,
-    active: true,
+    status: "active",
   },
   {
     apiName: "尾丸ポルカ",
@@ -378,7 +378,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "NePoLaBo",
     generationId: 5,
-    active: true,
+    status: "active",
   },
   {
     apiName: "魔乃アロエ",
@@ -388,7 +388,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "NePoLaBo",
     generationId: 5,
-    active: false,
+    status: "graduated",
   },
   // holoX
   {
@@ -399,7 +399,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "holoX",
     generationId: 6,
-    active: true,
+    status: "active",
   },
   {
     apiName: "鷹嶺ルイ",
@@ -409,7 +409,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "holoX",
     generationId: 6,
-    active: true,
+    status: "active",
   },
   {
     apiName: "博衣こより",
@@ -419,7 +419,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "holoX",
     generationId: 6,
-    active: true,
+    status: "active",
   },
   {
     apiName: "沙花叉クロヱ",
@@ -429,7 +429,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "holoX",
     generationId: 6,
-    active: true,
+    status: "affiliate",
   },
   {
     apiName: "風真いろは",
@@ -439,7 +439,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "holoX",
     generationId: 6,
-    active: true,
+    status: "active",
   },
 
   // -- DEV_IS --
@@ -454,7 +454,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "ReGLOSS",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "音乃瀬奏",
@@ -466,7 +466,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "ReGLOSS",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "一条莉々華",
@@ -478,7 +478,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "ReGLOSS",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "儒烏風亭らでん",
@@ -490,7 +490,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "ReGLOSS",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "轟はじめ",
@@ -502,7 +502,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "ReGLOSS",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   // FLOW GLOW
   {
@@ -515,7 +515,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "FLOW GLOW",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "虎金妃笑虎",
@@ -527,7 +527,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "FLOW GLOW",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "水宮枢",
@@ -539,7 +539,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "FLOW GLOW",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "輪堂千速",
@@ -551,7 +551,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "FLOW GLOW",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "綺々羅々ヴィヴィ",
@@ -563,7 +563,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive DEV_IS",
     generation: "FLOW GLOW",
     generationId: 2,
-    active: true,
+    status: "active",
   },
 
   // -- EN --
@@ -578,7 +578,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Myth",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#5D81C7",
       dark: "#3A69B2",
@@ -594,7 +594,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Myth",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#C90D40",
       dark: "#A1020B",
@@ -610,7 +610,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Myth",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#62567E",
       dark: "#3F3E69",
@@ -626,7 +626,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Myth",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#FF511C",
       dark: "#DC3907",
@@ -642,7 +642,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Myth",
     generationId: 1,
-    active: true, // affiliate
+    status: "affiliate",
     colors: {
       light: "#F8DB92",
       dark: "#F2BD36",
@@ -659,7 +659,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Promise",
     generationId: 2,
-    active: true,
+    status: "graduated",
     colors: {
       light: "#B4E4C7",
       dark: "#33CA66",
@@ -675,7 +675,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Promise",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#FF938D",
       dark: "#FE3A2D",
@@ -691,7 +691,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Promise",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#E10E5B",
       dark: "#991150",
@@ -707,7 +707,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Promise",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#DCC4B2",
       dark: "#C29371",
@@ -723,7 +723,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Promise",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#6879C7",
       dark: "#1D1797",
@@ -739,7 +739,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Council",
     generationId: 2,
-    active: false,
+    status: "graduated",
     colors: {
       light: "#E7BBD2",
       dark: "#D583AB",
@@ -756,7 +756,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Advent",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#B8A0CD",
       dark: "#8C80AE",
@@ -772,7 +772,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Advent",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#6E5BF4",
       dark: "#4B43DF",
@@ -788,7 +788,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Advent",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#2233FB",
       dark: "#1E27AC",
@@ -804,7 +804,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Advent",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#67B2FF",
       dark: "#2D87F7",
@@ -821,7 +821,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Justice",
     generationId: 4,
-    active: true,
+    status: "active",
     colors: {
       light: "#C7383B",
       dark: "#97303A",
@@ -837,7 +837,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Justice",
     generationId: 4,
-    active: true,
+    status: "active",
     colors: {
       light: "#FDB440",
       dark: "#CD9328",
@@ -853,7 +853,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Justice",
     generationId: 4,
-    active: true,
+    status: "active",
     colors: {
       light: "#119A5C",
       dark: "#137A42",
@@ -869,7 +869,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Justice",
     generationId: 4,
-    active: true,
+    status: "active",
     colors: {
       light: "#F087A9",
       dark: "#E75786",
@@ -888,7 +888,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "Area 15",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#B3EE55",
       dark: "#7BDF0E",
@@ -904,7 +904,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "Area 15",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#F6BBBB",
       dark: "#EF8381",
@@ -920,7 +920,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "Area 15",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#B19DDC",
       dark: "#784DBE",
@@ -937,7 +937,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "Holoro",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#F2C95C",
       dark: "#E89C0F",
@@ -953,7 +953,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "Holoro",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#D60E54",
       dark: "#B7030E",
@@ -969,7 +969,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "Holoro",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#0F52BA",
       dark: "#040F7F",
@@ -986,7 +986,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "HoloH3ro",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#FF3D3D",
       dark: "#DC2528",
@@ -1002,7 +1002,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "HoloH3ro",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#393464",
       dark: "#161C4F",
@@ -1018,7 +1018,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive ID",
     generation: "HoloH3ro",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#BAB9C3",
       dark: "#97A1AE",
@@ -1034,7 +1034,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "奏手イヅル",
@@ -1043,7 +1043,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "アルランディス",
@@ -1052,7 +1052,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "律可",
@@ -1061,7 +1061,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
-    active: true,
+    status: "active",
   },
   {
     apiName: "鏡見キラ",
@@ -1070,7 +1070,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
-    active: false,
+    status: "graduated",
   },
   {
     apiName: "薬師寺 朱雀",
@@ -1079,7 +1079,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "",
     generationId: 1,
-    active: false,
+    status: "graduated",
   },
   // gen 2
   {
@@ -1089,7 +1089,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "SunTempo",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "岸堂天真",
@@ -1098,7 +1098,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "SunTempo",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   {
     apiName: "夕刻ロベル",
@@ -1107,7 +1107,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "SunTempo",
     generationId: 2,
-    active: true,
+    status: "active",
   },
   // gen 3
   {
@@ -1117,7 +1117,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "MaFia",
     generationId: 3,
-    active: true,
+    status: "active",
   },
   {
     apiName: "荒咬オウガ",
@@ -1126,7 +1126,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "MaFia",
     generationId: 3,
-    active: true,
+    status: "active",
   },
   // UPROAR
   {
@@ -1136,7 +1136,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
-    active: true,
+    status: "active",
   },
   {
     apiName: "羽継烏有",
@@ -1145,7 +1145,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
-    active: true,
+    status: "active",
   },
   {
     apiName: "緋崎ガンマ",
@@ -1154,7 +1154,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
-    active: false,
+    status: "graduated",
   },
   {
     apiName: "水無世燐央",
@@ -1163,7 +1163,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars JP",
     generation: "UPROAR!!",
     generationId: 4,
-    active: true,
+    status: "active",
   },
 
   // -- STARS EN --
@@ -1178,7 +1178,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS HQ",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#FF9603",
     },
@@ -1193,7 +1193,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS HQ",
     generationId: 1,
-    active: false,
+    status: "graduated",
     colors: {
       light: "#463464",
     },
@@ -1208,7 +1208,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS HQ",
     generationId: 1,
-    active: false,
+    status: "graduated",
     colors: {
       light: "#C8CCD0",
     },
@@ -1223,7 +1223,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS HQ",
     generationId: 1,
-    active: true,
+    status: "active",
     colors: {
       light: "#54ACDC",
     },
@@ -1239,7 +1239,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS Vanguard",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#C99BF6",
     },
@@ -1254,7 +1254,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS Vanguard",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#EB3DA2",
     },
@@ -1269,7 +1269,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS Vanguard",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#B44D32",
     },
@@ -1284,7 +1284,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "TEMPUS Vanguard",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#DD3F34",
     },
@@ -1300,7 +1300,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "ARMIS",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#E60012",
     },
@@ -1315,7 +1315,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "ARMIS",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#0A6463",
     },
@@ -1330,7 +1330,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "ARMIS",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#383635",
     },
@@ -1345,7 +1345,7 @@ export const TALENTS: Talent[] = [
     agency: "Holostars EN",
     generation: "ARMIS",
     generationId: 3,
-    active: true,
+    status: "active",
     colors: {
       light: "#1C449A",
     },
@@ -1362,7 +1362,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive staff",
     generation: "",
     generationId: 1,
-    active: false,
+    status: "graduated",
     colors: {
       light: "#483F7A",
       dark: "#2B2B6E",
@@ -1378,7 +1378,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive staff",
     generation: "",
     generationId: 2,
-    active: true,
+    status: "active",
     colors: {
       light: "#E3F1CD",
       dark: "#CEE5A2",
@@ -1391,41 +1391,41 @@ export const TALENTS: Talent[] = [
     name: "Hololive main ch.",
     twitterAccount: "hololivetv",
     youtubeChannel: "hololive",
-    active: true,
+    status: "active",
   },
   {
-    apiName: "hololive DEV_IS",
-    name: "Hololive DEV_IS ch.",
+    apiName: "ReGLOSS",
+    name: "Hololive DEV_IS ReGLOSS ch.",
     twitterAccount: "",
     youtubeChannel: "hololiveDEV_IS",
-    active: true,
+    status: "active",
   },
   {
     apiName: "FLOW GLOW",
     name: "Hololive DEV_IS FLOW GLOW ch.",
     twitterAccount: "",
     youtubeChannel: "DEV_IS_FLOWGLOW",
-    active: true,
+    status: "active",
   },
   {
     apiName: "holo EN",
     name: "Hololive EN ch.",
     twitterAccount: "hololive_En",
     youtubeChannel: "",
-    active: true,
+    status: "active",
   },
   {
     apiName: "ホロスターズ",
     name: "Holostars ch.",
     twitterAccount: "holostarstv",
     youtubeChannel: "HOLOSTARS",
-    active: true,
+    status: "active",
   },
   {
     apiName: "HOLOSTARS EN",
     name: "Holostars EN ch.",
     twitterAccount: "",
     youtubeChannel: "",
-    active: true,
+    status: "active",
   },
 ];

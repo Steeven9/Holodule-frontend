@@ -14,7 +14,7 @@ export interface Talent {
   agency?: string;
   generation?: string;
   generationId?: number;
-  active: boolean;
+  status: "active" | "affiliate" | "graduated";
   colors?: {
     light: string;
     dark?: string;

@@ -35,7 +35,7 @@ export default async function BranchTalents({ params }: Readonly<Props>) {
           <div>
             {talent.agency} gen {talent.generationId}
             {talent.generation ? ` (${talent.generation})` : ""}
-            {!talent.active ? " - Graduated" : ""}
+            {talent.status != "active" ? ` - ${talent.status}` : ""}
           </div>
 
           <div className="mt-2">
