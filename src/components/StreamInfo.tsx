@@ -42,7 +42,9 @@ export default function StreamInfo({ stream }: Readonly<Props>) {
           {stream.title.length === 0 ? "<Unknown title>" : stream.title}
         </Link>
         <div>
-          <Link href={`/talents/all#${talentName}`}>{talentName}</Link>
+          <Link href={`/talents/all#${talentName}`}>
+            {talentName} {talent?.fanMark}
+          </Link>
         </div>
         <div>
           <span className="align-middle">at {parseDate(stream.datetime)}</span>
