@@ -186,7 +186,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive JP",
     generation: "",
     generationId: 2,
-    status: "active",
+    status: "graduated", // 26.04.2025
   },
   {
     apiName: "百鬼あやめ",
@@ -616,7 +616,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Myth",
     generationId: 1,
-    status: "active",
+    status: "graduated", // 01.05.2025
     colors: {
       light: "#5D81C7",
       dark: "#3A69B2",
@@ -745,7 +745,7 @@ export const TALENTS: Talent[] = [
     agency: "Hololive EN",
     generation: "Promise",
     generationId: 2,
-    status: "active",
+    status: "graduated", // 28.04.2025
     colors: {
       light: "#DCC4B2",
       dark: "#C29371",
