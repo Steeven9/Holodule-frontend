@@ -4,7 +4,6 @@ import { TIMEZONE } from "@/lib/config";
 import Clock from "react-live-clock";
 
 export default function TimeBar() {
-  //TODO picker for timezone
   return (
     <div className="mb-4">
       Current time:{" "}
